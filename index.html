@@ -212,34 +212,36 @@
       </div>
       <div class="works-list">
         <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+        <a href="https://arxiv.org/abs/2505.16579" class="work-item" target="_blank">
           <div class="work-info">
             <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
+            <h5>Bridging the Dynamic Perception Gap: Training-Free Draft Chain-of-Thought for Dynamic Multimodal Spatial
+              Reasoning</h5>
             <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
+            <p>A training-free framework that seamlessly integrates textual CoT with corresponding visual drafts into
+              MLLMs</p>
             <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
+            <span class="work-venue">EMNLP 2025 Findings</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
         <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Paper Title 2</h5>
             <p>Brief description of the work and its main contribution.</p>
             <span class="work-venue">Conference/Journal 2023</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+        </a> -->
+        <!-- <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Paper Title 3</h5>
             <p>Brief description of the work and its main contribution.</p>
             <span class="work-venue">Conference/Journal 2023</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
@@ -350,12 +352,21 @@
         <div class="hero-body">
           <!-- TODO: Replace with your teaser video -->
           <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata"> -->
-            <!-- TODO: Add your video file path here -->
-            <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
+          <!-- TODO: Add your video file path here -->
+          <!-- <source src="static/videos/banner_video.mp4" type="video/mp4"> -->
           <!-- </video> -->
           <!-- TODO: Replace with your video description -->
-          <h2 class="subtitle has-text-centered">
-            Page Under Construction.....
+          <h2 class="subtitle has-text-justified">
+            (2/28) NOTE: Our server is currently unavailable. We will complete the code organization and upload sample
+            images as soon as possible after restored.
+          </h2>
+          <h2 class="title is-3 has-text-centered">Introduction for SAYO</h2>
+          <h2 class="subtitle has-text-justified">SAYO is a model trained via only visual attention based reward.</h2>
+          <img src="static/images/carousel1.jpg" alt="A" loading="lazy" />
+          <h2 class="content has-text-justified">Most MLLMs possess extensive knowledge reserves, but their limited
+            ability to localize objects within images restricts their full reasoning potential. </br>
+            SAYO employs reward-based training by relying on key visual information tokens. In the example shown above,
+            the trained model accurately focuses on critical visual information and enhances reasoning accuracy.
           </h2>
         </div>
       </div>
@@ -395,26 +406,27 @@
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
+          <h2 class="title is-3 has-text-centered">More Example</h2>
           <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/case1.png" alt="A case in ChartQA" loading="lazy" />
+              <h2 class="subtitle has-text-centered">
+                A case in ChartQA.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/case2.png" alt="A case in We-Math" loading="lazy" />
+              <h2 class="subtitle has-text-centered">
+                A case in We-Math.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/case3.png" alt="A case in MME-Realworld" loading="lazy" />
+              <h2 class="subtitle has-text-centered">
+                A case in MME-Realworld.
+              </h2>
+            </div>
             <!-- <div class="item">
-              <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                First image description.
-              </h2>
-            </div>
-            <div class="item">
-              <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                Second image description.
-              </h2>
-            </div>
-            <div class="item">
-              <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                Third image description.
-              </h2>
-            </div>
-            <div class="item">
               <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy" />
               <h2 class="subtitle has-text-centered">
                 Fourth image description.
@@ -426,7 +438,24 @@
     </section>
     <!-- End image carousel -->
 
-
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Results</h2>
+            <img src="static/images/results.png" alt="main result" loading="lazy" />
+            <img src="static/images/ablation.png" alt="ablation result" loading="lazy" />
+            <h2 class="content has-text-justified">Sayo has better performance in various of understanding and reasoning
+              tasks without refocus or visual prompts. Besides, models trained using only the visual attention reward
+              achieve performance comparable to those trained with the combined reward, whereas models trained with
+              accuracy rewards alone exhibit only marginal gains. These findings suggest that deficiencies in current
+              MLLMs stem less from limited reasoning capacity and more from insufficient visual perception and
+              localization.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- Youtube video -->
@@ -452,12 +481,12 @@
 
 
     <!-- Video carousel -->
-    <section class="hero is-small">
+    <!-- <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
           <h2 class="title is-3">Another Carousel</h2>
-          <div id="results-carousel" class="carousel results-carousel">
-            <!-- <div class="item item-video1">
+          <div id="results-carousel" class="carousel results-carousel"> -->
+    <!-- <div class="item item-video1">
               <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
                 <source src="static/videos/carousel1.mp4" type="video/mp4">
               </video>
@@ -472,10 +501,10 @@
                 <source src="static/videos/carousel3.mp4" type="video/mp4">
               </video>
             </div> -->
-          </div>
+    <!-- </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End video carousel -->
 
 
